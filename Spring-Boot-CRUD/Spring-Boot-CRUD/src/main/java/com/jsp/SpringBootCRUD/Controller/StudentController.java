@@ -17,37 +17,37 @@ import com.jsp.SpringBootCRUD.Service.StudentService;
 
 @RestController
 public class StudentController {
-	
+
 	@Autowired
 	StudentService studentService;
-	
+
 	// save student
 	@PostMapping("/student")
-	public ResponseStructure<Student> saveStudent(@RequestBody Student student){
+	public ResponseStructure<Student> saveStudent(@RequestBody Student student) {
 		return studentService.saveStudent(student);
 	}
-	
+
 	// get student by id
 	@GetMapping("/student/{id}")
-	public ResponseStructure<Student> getStudentById(@PathVariable int id){
+	public ResponseStructure<Student> getStudentById(@PathVariable int id) {
 		return studentService.getStudentById(id);
 	}
-	
+
 	// get all students
 	@GetMapping("/student")
-	public ResponseStructure<List<Student>> getallStudent(){
+	public ResponseStructure<List<Student>> getallStudent() {
 		return studentService.getAllStudent();
 	}
-	
+
 	// update student
 	@PutMapping("/student/{id}")
-	public ResponseStructure<Student> updateStudent(@RequestBody Student student, @PathVariable Integer id){
+	public ResponseStructure<Student> updateStudent(@RequestBody Student student, @PathVariable Integer id) {
 		return studentService.updateStudent(student, id);
 	}
-	
+
 	// delete student
 	@DeleteMapping("/student/{id}")
-	public ResponseStructure<String> deleteStudent(@PathVariable int id){
+	public ResponseStructure<String> deleteStudent(@PathVariable int id) {
 		return studentService.deleteStudent(id);
 	}
 }

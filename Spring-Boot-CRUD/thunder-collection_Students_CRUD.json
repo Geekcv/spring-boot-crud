@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Students_CRUD",
+    "collectionId": "6b44d867-73b5-4a11-9042-b8028905dca0",
+    "dateExported": "2024-06-15T10:29:04.622Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9b05bc0d-a65e-471e-899f-75173ee651e7",
+            "colId": "6b44d867-73b5-4a11-9042-b8028905dca0",
+            "containerId": "",
+            "name": "GET_Students",
+            "url": "http://localhost:8080/student",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-15T10:08:14.698Z",
+            "modified": "2024-06-15T10:09:40.422Z",
+            "headers": []
+        },
+        {
+            "_id": "39ea6bf1-e627-4048-8b19-b6df6fbf7d22",
+            "colId": "6b44d867-73b5-4a11-9042-b8028905dca0",
+            "containerId": "",
+            "name": "Post_Students",
+            "url": "http://localhost:8080/student",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-15T10:10:19.584Z",
+            "modified": "2024-06-15T10:12:20.465Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"varun\",\n \"email\":\"varun@gamil.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "41339bd4-92ce-4496-b7dd-7d1314f33d6a",
+            "colId": "6b44d867-73b5-4a11-9042-b8028905dca0",
+            "containerId": "",
+            "name": "Get_BY_ID_students",
+            "url": "http://localhost:8080/student/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-15T10:12:53.131Z",
+            "modified": "2024-06-15T10:14:18.227Z",
+            "headers": []
+        },
+        {
+            "_id": "c1c2a5ad-8bc9-4b30-b5fc-428abe2c0f0c",
+            "colId": "6b44d867-73b5-4a11-9042-b8028905dca0",
+            "containerId": "",
+            "name": "Update_Students",
+            "url": "http://localhost:8080/student/2",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-15T10:13:29.292Z",
+            "modified": "2024-06-15T10:14:11.879Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"name\": \"navin\",\n    \"email\": \"navin@gamil.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c261a7bc-b36e-4c95-b1c4-2ef58e790254",
+            "colId": "6b44d867-73b5-4a11-9042-b8028905dca0",
+            "containerId": "",
+            "name": "Delete_Students",
+            "url": "http://localhost:8080/student/2",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-15T10:15:03.954Z",
+            "modified": "2024-06-15T10:15:18.216Z",
+            "headers": []
+        }
+    ],
+    "ref": "aeO2m_vi4FLQvAuTCtc69c-yBRODY7Wl1AiaZzpBi1L5LOmg1YXryljgg7iDF6KiiVX0-AgcDWFNdW3_SHQ52Q"
+}
